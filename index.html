@@ -1,77 +1,101 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arabinda Das Portfolio</title><style>
-body {
+<title>Arabinda Das | Web Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
     background: #ffffff;
     color: #111;
+    line-height: 1.6;
 }
 
 /* HEADER */
 header {
+    padding: 80px 20px;
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #2563eb, #38bdf8);
+    background: linear-gradient(135deg, #2563eb, #38bdf8);
     color: white;
     animation: fadeDown 1.5s ease;
 }
 
 header h1 {
     font-size: 36px;
-    margin: 0;
+    letter-spacing: 1px;
 }
 
 header p {
-    font-size: 18px;
-}
-
-/* SECTION */
-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-    animation: fadeUp 1.5s ease;
-}
-
-/* CARDS */
-.card {
-    background: #f1f5f9;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-/* IMAGE */
-.profile-img {
-    width: 120px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    animation: zoomIn 1.5s ease;
+    margin-top: 10px;
 }
 
 /* BUTTON */
 .btn {
+    margin-top: 20px;
     display: inline-block;
-    padding: 12px 20px;
-    background: #2563eb;
-    color: white;
-    border-radius: 8px;
+    padding: 12px 30px;
+    background: white;
+    color: #2563eb;
+    border-radius: 30px;
     text-decoration: none;
-    margin-top: 10px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 .btn:hover {
-    background: #1e40af;
+    background: #f1f5f9;
+}
+
+/* SECTION */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    animation: fadeUp 1.5s ease;
+}
+
+/* HEADINGS */
+h2 {
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+/* BOX */
+.box {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.03);
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 14px;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f1f5f9;
+    font-size: 14px;
+    color: #555;
 }
 
 /* ANIMATIONS */
@@ -84,31 +108,60 @@ section {
     from {opacity: 0; transform: translateY(50px);}
     to {opacity: 1; transform: translateY(0);}
 }
-
-@keyframes zoomIn {
-    from {opacity: 0; transform: scale(0.5);}
-    to {opacity: 1; transform: scale(1);}
-}
 </style></head><body><header>
-    <img src="https://via.placeholder.com/120" class="profile-img">
     <h1>Arabinda Das</h1>
-    <p>Freelance Web Developer | Data Entry | Tally Expert</p>
-</header><section>
-    <h2>About Me</h2>
-    <div class="card">
-        I am a Class 12 student with skills in web development, HTML, data entry, and Tally. 
-        I create modern and affordable websites for businesses.
-    </div>
-</section><section>
-    <h2>My Skills</h2>
-    <div class="card">✔ HTML & Web Design</div>
-    <div class="card">✔ Data Entry</div>
-    <div class="card">✔ Tally</div>
-</section><section>
-    <h2>Contact Me</h2>
-    <div class="card">
-        📧 Email: rocky120071@gmail.com <br><br>
-        <a href="#" class="btn">Contact on WhatsApp</a>
-    </div>
-</section></body>
+    <p>Freelance Web Developer | Helping Small Businesses Go Online</p>
+    <a class="btn" href="mailto:rocky120071@gmail.com">Hire Me</a>
+</header><section><h2>About</h2>
+<div class="box">
+    <p>
+    I am a freelance web developer focused on building clean, fast, and affordable websites for small businesses. 
+    I also provide data entry and Tally services with accuracy and reliability. 
+    My goal is to help clients grow their business online.
+    </p>
+</div>
+
+<h2>Skills</h2>
+<div class="box skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Web Design</span>
+    <span>Responsive Design</span>
+    <span>Data Entry</span>
+    <span>Tally</span>
+</div>
+
+<h2>Services</h2>
+<div class="box">
+    <p>✔ Business Website Design</p>
+    <p>✔ Portfolio Website</p>
+    <p>✔ Landing Pages</p>
+    <p>✔ Data Entry Work</p>
+    <p>✔ Tally Accounting Support</p>
+</div>
+
+<h2>Projects</h2>
+<div class="box">
+    <p>✔ Personal Portfolio Website</p>
+    <p>✔ Business Website (Demo)</p>
+    <p>✔ More Coming Soon...</p>
+</div>
+
+<h2>Why Choose Me</h2>
+<div class="box">
+    <p>✔ Affordable pricing</p>
+    <p>✔ Fast delivery</p>
+    <p>✔ Clean modern design</p>
+    <p>✔ Good communication</p>
+</div>
+
+<h2>Contact</h2>
+<div class="box">
+    <p>Email: rocky120071@gmail.com</p>
+    <p>Available for freelance projects</p>
+</div>
+
+</section><footer>
+    <p>© 2026 Arabinda Das | Freelance Developer</p>
+</footer></body>
 </html>
