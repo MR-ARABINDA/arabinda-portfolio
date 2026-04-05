@@ -1,35 +1,114 @@
 <!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Arabinda Das Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {font-family: Arial; margin:0; background:#0f172a; color:white;}
-    header {padding:40px; text-align:center; background:#1e293b;}
-    h1 {margin:0; font-size:32px;}
-    p {color:#94a3b8;}
-    section {padding:30px;}
-    .card {background:#1e293b; padding:20px; margin:10px 0; border-radius:10px;}
-    a {color:#38bdf8; text-decoration:none;}
-  </style>
-</head><body><header>
-  <h1>Arabinda Das</h1>
-  <p>Freelance Web Developer | Data Entry | Tally Expert</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arabinda Das Portfolio</title><style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #2563eb, #38bdf8);
+    color: white;
+    animation: fadeDown 1.5s ease;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* SECTION */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    animation: fadeUp 1.5s ease;
+}
+
+/* CARDS */
+.card {
+    background: #f1f5f9;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGE */
+.profile-img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    animation: zoomIn 1.5s ease;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1e40af;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+    from {opacity: 0; transform: translateY(-50px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(50px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes zoomIn {
+    from {opacity: 0; transform: scale(0.5);}
+    to {opacity: 1; transform: scale(1);}
+}
+</style></head><body><header>
+    <img src="https://via.placeholder.com/120" class="profile-img">
+    <h1>Arabinda Das</h1>
+    <p>Freelance Web Developer | Data Entry | Tally Expert</p>
 </header><section>
-  <h2>About Me</h2>
-  <div class="card">
-    I am a Class 12 student with skills in web development, HTML, data entry, and Tally. I create simple and affordable websites.
-  </div>
+    <h2>About Me</h2>
+    <div class="card">
+        I am a Class 12 student with skills in web development, HTML, data entry, and Tally. 
+        I create modern and affordable websites for businesses.
+    </div>
 </section><section>
-  <h2>My Skills</h2>
-  <div class="card">✔ HTML & Web Design</div>
-  <div class="card">✔ Data Entry</div>
-  <div class="card">✔ Tally</div>
+    <h2>My Skills</h2>
+    <div class="card">✔ HTML & Web Design</div>
+    <div class="card">✔ Data Entry</div>
+    <div class="card">✔ Tally</div>
 </section><section>
-  <h2>Contact Me</h2>
-  <div class="card">
-    Email: rocky120071@gmail.com <br>
-    WhatsApp: Add your number here
-  </div>
+    <h2>Contact Me</h2>
+    <div class="card">
+        📧 Email: rocky120071@gmail.com <br><br>
+        <a href="#" class="btn">Contact on WhatsApp</a>
+    </div>
 </section></body>
 </html>
