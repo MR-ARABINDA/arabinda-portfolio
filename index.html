@@ -10,44 +10,43 @@
 }
 
 body {
-    background: #ffffff;
+    background: #f5f7fb;
     color: #111;
-    line-height: 1.6;
 }
 
 /* HEADER */
 header {
-    padding: 80px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #2563eb, #38bdf8);
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
     color: white;
-    animation: fadeDown 1.5s ease;
 }
 
-header h1 {
-    font-size: 36px;
-    letter-spacing: 1px;
-}
-
-header p {
-    margin-top: 10px;
+/* PROFILE */
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
 }
 
 /* BUTTON */
 .btn {
-    margin-top: 20px;
     display: inline-block;
-    padding: 12px 30px;
-    background: white;
-    color: #2563eb;
-    border-radius: 30px;
+    margin-top: 15px;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
     text-decoration: none;
+    border-radius: 30px;
     font-weight: bold;
     transition: 0.3s;
 }
 
 .btn:hover {
-    background: #f1f5f9;
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
 /* SECTION */
@@ -55,7 +54,32 @@ section {
     max-width: 900px;
     margin: auto;
     padding: 40px 20px;
-    animation: fadeUp 1.5s ease;
+}
+
+/* BOX */
+.box {
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    padding: 8px 14px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
 /* HEADINGS */
@@ -64,104 +88,70 @@ h2 {
     color: #2563eb;
 }
 
-/* BOX */
-.box {
-    background: #f8fafc;
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.box:hover {
-    transform: scale(1.03);
-}
-
-/* SKILLS */
-.skills span {
-    display: inline-block;
-    margin: 5px;
-    padding: 8px 14px;
-    background: #2563eb;
-    color: #fff;
-    border-radius: 20px;
-    font-size: 14px;
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background: #f1f5f9;
-    font-size: 14px;
-    color: #555;
-}
-
-/* ANIMATIONS */
-@keyframes fadeDown {
-    from {opacity: 0; transform: translateY(-50px);}
-    to {opacity: 1; transform: translateY(0);}
-}
-
-@keyframes fadeUp {
-    from {opacity: 0; transform: translateY(50px);}
-    to {opacity: 1; transform: translateY(0);}
+    background: #e2e8f0;
 }
 </style></head><body><header>
+    <img src="https://i.imgur.com/yourphoto.png" class="profile">
     <h1>Arabinda Das</h1>
-    <p>Freelance Web Developer | Helping Small Businesses Go Online</p>
-    <a class="btn" href="mailto:rocky120071@gmail.com">Hire Me</a>
+    <p>Freelance Web Developer</p>
+    <a href="mailto:rocky120071@gmail.com" class="btn">Hire Me</a>
 </header><section><h2>About</h2>
 <div class="box">
-    <p>
-    I am a freelance web developer focused on building clean, fast, and affordable websites for small businesses. 
-    I also provide data entry and Tally services with accuracy and reliability. 
-    My goal is to help clients grow their business online.
-    </p>
-</div>
+<p>
+I am a freelance web developer with skills in HTML, CSS, and modern web design. 
+I create clean, responsive, and user-friendly websites for small businesses, shops, and coaching centers.I have completed ADCA, Tally with GST, and multiple HP LIFE certification courses, which have strengthened my knowledge in business, IT, and communication.
 
-<h2>Skills</h2>
+My goal is to help businesses grow online by providing affordable and effective website solutions with fast delivery and reliable support.
+
+</p>
+</div><h2>Skills</h2>
 <div class="box skills">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>Web Design</span>
-    <span>Responsive Design</span>
-    <span>Data Entry</span>
-    <span>Tally</span>
-</div>
-
-<h2>Services</h2>
+<span>HTML</span>
+<span>CSS</span>
+<span>Web Design</span>
+<span>Responsive Design</span>
+<span>Data Entry</span>
+<span>Tally</span>
+</div><h2>Certificates</h2>
 <div class="box">
-    <p>✔ Business Website Design</p>
-    <p>✔ Portfolio Website</p>
-    <p>✔ Landing Pages</p>
-    <p>✔ Data Entry Work</p>
-    <p>✔ Tally Accounting Support</p>
-</div>
-
-<h2>Projects</h2>
+<p>✔ ADCA (Advanced Diploma in Computer Applications)</p>
+<p>✔ Tally with GST</p>
+<p>✔ Web Development & Design</p>
+<p>✔ HP LIFE (9–10 Certified Courses)</p><a href="YOUR_GOOGLE_DRIVE_FOLDER_LINK" target="_blank" class="btn">
+📄 View Certificates
+</a>
+</div><h2>Services</h2>
 <div class="box">
-    <p>✔ Personal Portfolio Website</p>
-    <p>✔ Business Website (Demo)</p>
-    <p>✔ More Coming Soon...</p>
-</div>
-
-<h2>Why Choose Me</h2>
+<p>✔ Business Website Design</p>
+<p>✔ Portfolio Website</p>
+<p>✔ Landing Pages</p>
+<p>✔ Data Entry Work</p>
+<p>✔ Tally Accounting Support</p>
+</div><h2>Projects</h2>
 <div class="box">
-    <p>✔ Affordable pricing</p>
-    <p>✔ Fast delivery</p>
-    <p>✔ Clean modern design</p>
-    <p>✔ Good communication</p>
-</div>
+<p>✔ Mobile Shop Website</p>
+<p>✔ Coaching Center Website</p>
+<p>✔ Clothing Store Website</p>
+</div></section><footer>
+<p>© 2026 Arabinda Das</p>
+</footer><a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
 
-<h2>Contact</h2>
-<div class="box">
-    <p>Email: rocky120071@gmail.com</p>
-    <p>Available for freelance projects</p>
-</div>
-
-</section><footer>
-    <p>© 2026 Arabinda Das | Freelance Developer</p>
-</footer></body>
+</body>
 </html>
